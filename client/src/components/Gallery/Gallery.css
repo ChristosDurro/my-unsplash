@@ -1,0 +1,83 @@
+
+.display-container {
+    
+    width: 85%;
+    margin: 5% auto 0;
+
+}
+
+.no-img {
+    text-align: center;
+    width: 100%;
+    font-size: 32px;
+    font-weight: 900;
+    color: #3f3f3f;
+}
+
+.grid-item {
+    border-radius: 16px;
+    width: 385px;
+    position: relative;
+}
+
+.img {
+    border-radius: 16px;
+    width: 100%;
+    height: 100%;
+}
+
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: rgba(0, 0, 0, 0.5);
+    opacity: 0;
+    transition: all .5s;
+    border-radius: 16px;
+    width: 100%;
+    height: 100%;
+    cursor: pointer;
+}
+
+
+.overlay:hover {
+    opacity: 1;
+}
+
+.delete {
+    color: #EB5757;
+    font-size: 14px;
+    font-weight: 500;
+    padding: 5px 15px;
+    border: 1px solid #EB5757;
+    border-radius: 38px;
+    position: absolute;
+    top: 18px;
+    right: 18px;
+    background: transparent;
+    cursor: pointer;
+}
+
+.delete:hover {
+    color: #fff;
+    background: #EB5757;
+    transition: .5s;
+}
+
+.overlay-text {
+    font-size: 18px;
+    font-weight: 700;
+    position: absolute;
+    bottom: 0;
+    padding: 15px;
+    color: #fff;
+    cursor:auto;
+}
+
+
+@media (max-width: 600px) {
+    .grid-item {
+        width: 100%!important;
+    }
+}
