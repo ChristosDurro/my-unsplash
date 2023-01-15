@@ -5,6 +5,7 @@ const dbConnection = require("./controllers/db");
 const Image = require("./models/Image");
 
 require("dotenv").config();
+
 app.use(cors());
 app.use(express.json());
 
@@ -12,6 +13,11 @@ const port = process.env.PORT || 8000;
 
 // Database connection
 dbConnection(process.env.DB_ACCESS);
+
+// Wrong API route
+app.get("/", (req, res) => {
+  res.send("Wrong API Endpoint! Use Route '/images'.");
+});
 
 // Fetch images from database
 app.get("/images", (req, res) => {
