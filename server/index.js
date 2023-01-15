@@ -10,12 +10,9 @@ app.use(cors());
 app.use(express.json());
 
 const port = process.env.PORT || 8000;
-const uri = process.env.DB_ACCESS;
 
 // Database connection
-dbConnection(
-  "mongodb+srv://admin-chris:Durros123123@cluster0.70is7.mongodb.net/unsplash?retryWrites=true&w=majority"
-);
+dbConnection(process.env.DB_ACCESS);
 
 // Wrong API route
 app.get("/", (req, res) => {
