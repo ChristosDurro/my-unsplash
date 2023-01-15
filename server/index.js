@@ -10,9 +10,10 @@ app.use(cors());
 app.use(express.json());
 
 const port = process.env.PORT || 8000;
+const uri = process.env.DB_ACCESS;
 
 // Database connection
-dbConnection(process.env.DB_ACCESS);
+dbConnection(uri);
 
 // Wrong API route
 app.get("/", (req, res) => {
