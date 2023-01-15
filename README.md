@@ -8,15 +8,15 @@
 
 <div align="center">
   <h3>
-    <a href="https://my-unsplash-version.netlify.app/">
+    <a href="https://my-unsplash-version.netlify.app/" target="_blank">
       Demo
     </a>
     <span> | </span>
-    <a href="https://devchallenges.io/solutions/x3ukcGKoV5ei0JQNxOZ2">
+    <a href="https://devchallenges.io/solutions/x3ukcGKoV5ei0JQNxOZ2" target="_blank">
       Solution
     </a>
     <span> | </span>
-    <a href="https://devchallenges.io/challenges/rYyhwJAxMfES5jNQ9YsP">
+    <a href="https://devchallenges.io/challenges/rYyhwJAxMfES5jNQ9YsP" target="_blank">
       Challenge
     </a>
   </h3>
