@@ -7,7 +7,7 @@ import { useEffect } from "react";
 
 const Gallery = (props) => {
   const [images, setImages] = useState([]);
-  const url = "http://localhost:8000/delete";
+  const url = "https://my-unsplash-k6qq.onrender.com/delete";
 
   useEffect(() => {
     setImages(props.images);

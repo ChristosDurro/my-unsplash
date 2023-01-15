@@ -3,10 +3,9 @@ import Navbar from "./components/global/Navbar";
 import Gallery from "./components/Gallery/Gallery";
 import { useState } from "react";
 import { useEffect } from "react";
-import axios from "axios";
 
 const App = () => {
-  const fetchURL = "http://localhost:8000/images";
+  const fetchURL = "https://my-unsplash-k6qq.onrender.com/images";
 
   const [images, setImages] = useState([]);
   const [searchValue, setSearchValue] = useState("");

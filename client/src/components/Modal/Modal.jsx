@@ -7,7 +7,7 @@ const Modal = ({ closeModal, addImage }) => {
     label: "",
     image: "",
   });
-  const postURL = "http://localhost:8000/add";
+  const postURL = "https://my-unsplash-k6qq.onrender.com/add";
 
   const handleChange = (e) => {
     const { name, value } = e.target;
